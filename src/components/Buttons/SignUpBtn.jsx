@@ -7,8 +7,8 @@ const SignUpBtn = ({ size = "sm", version = "sign-up" }) => {
         size === "mx" ? "px-7 py-3 text-[18px]" : " "
       } ${
         version === "login"
-          ? "bg-[#1616131c] text-textBlack"
-          : "text-white bg-black"
+          ? "bg-[rgba(220,2,192,0.24)] text-textBlack"
+          : "text-white bg-[linear-gradient(270deg,#BE0D00_0%,#FF2919_100%)]"
       } `}
       href="#"
     >

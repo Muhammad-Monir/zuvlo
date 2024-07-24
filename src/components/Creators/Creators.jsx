@@ -38,7 +38,7 @@ const Creators = () => {
       creator_name: "Jamal Sheikh",
       creator_role: "AI Creator",
       followers: "205k",
-    },
+    }, 
     {
       creator_img:
         "https://images.pexels.com/photos/26852336/pexels-photo-26852336/free-photo-of-portrait-of-couple-sitting-together.jpeg?auto=compress&cs=tinysrgb&w=600",

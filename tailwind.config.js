@@ -22,7 +22,7 @@ export default {
         textBlack: "#161613",
         textBlackV2: "#141414",
         lightBlack: "#333",
-        pinkRed: "#F94F64",
+        pinkRed: "#DC02C0",
       },
     },
   },
