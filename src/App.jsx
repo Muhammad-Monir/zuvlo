@@ -17,6 +17,8 @@ const App = () => {
       <Creators />
       <FeatureDetails />
       {/* main content area ends */}
+      <Creators />
+      <Creators />
     </>
   );
 };

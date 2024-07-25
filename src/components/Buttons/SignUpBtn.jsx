@@ -3,8 +3,8 @@ import PropTypes from "prop-types";
 const SignUpBtn = ({ size = "sm", version = "sign-up" }) => {
   return (
     <a
-      className={`px-8 py-4   font-medium rounded-[160px] text-base leading-5 ${
-        size === "mx" ? "px-7 py-3 text-[18px]" : " "
+      className={` font-medium rounded-[160px] text-base leading-5 ${
+        size === "mx" ? "px-7 py-3 text-[18px]" : " px-8 py-4"
       } ${
         version === "login"
           ? "bg-[rgba(220,2,192,0.24)] text-textBlack"

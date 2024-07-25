@@ -1,5 +1,7 @@
 import flowerShape from "../../assets/images/flower-art.png";
 import SingleFeature from "./SingleFeature";
+import featureBg from "../../assets/images/feature-details-bg.png";
+import FeatureMockup from "./FeatureMockup";
 
 const FeatureDetails = () => {
   const featureList = [
@@ -27,11 +29,11 @@ const FeatureDetails = () => {
   ];
 
   return (
-    <section className=" py-80 relative ">
+    <section className=" pt-80 pb-12 relative feature-details-container ">
       {/* main content */}
-      <div className="container flex">
+      <div className="container flex gap-[225px] relative z-20 px-[72px] ">
         {/* description holder */}
-        <div className="w-[50%]">
+        <div className="max-w-[732px]">
           {/* list */}
           <div className="flex flex-col">
             {featureList.map((item, index) => (
@@ -41,8 +43,8 @@ const FeatureDetails = () => {
         </div>
 
         {/* animation holder */}
-        <div className="w-[40%]">
-          <h3>this is animation</h3>
+        <div className="">
+          <FeatureMockup />
         </div>
       </div>
 
@@ -54,6 +56,23 @@ const FeatureDetails = () => {
           alt=""
         />
       </div>
+      <div className="w-[220px] h-[640px] overflow-hidden absolute bottom-0 -left-14 -rotate-180">
+        <img
+          className="w-full h-full object-contain"
+          src={flowerShape}
+          alt=""
+        />
+      </div>
+
+      {/* flower shapes */}
+
+      {/* feature background image */}
+      <img
+        src={featureBg}
+        alt=""
+        className="absolute w-full h-full z-0 top-10 -left-[640px]"
+      />
+      {/* feature background image */}
     </section>
   );
 };
