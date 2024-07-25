@@ -16,27 +16,32 @@ const FeatureMockup = () => {
   const img2 = useRef();
   const img3 = useRef();
 
+  const imgHolder = useRef();
+
   const container = useRef();
 
-//   useGSAP(
-//     () => {
-//       gsap.to(
-//         img1.current,
-//         scrollTrigger:{
-
-//         },
-//         {
-//           x: 360,
-//         }
-//       );
-//     },
-//     { scope: container }
-//   );
+  useGSAP(
+    () => {
+      gsap.to(imgHolder.current, {
+        scrollTrigger: {
+          trigger: container.current,
+          start: "top bottom",
+          end: "bottom top",
+          scrub: true,
+        },
+        scale: 0.8,
+      });
+    },
+    { scope: container }
+  );
 
   return (
     <div ref={container} className="sticky top-5">
       {/* image holder */}
-      <div className="w-[283px] h-[653px] rounded-[30px] overflow-hidden ft-animation-holder relative feature-details-container">
+      <div
+        ref={imgHolder}
+        className="w-[283px] h-[653px] rounded-[30px] overflow-hidden ft-animation-holder relative feature-details-container"
+      >
         <img
           ref={img1}
           src={mockup1}
