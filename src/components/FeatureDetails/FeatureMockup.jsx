@@ -1,4 +1,5 @@
 import { useRef } from "react";
+import PropTypes from "prop-types";
 import mockup1 from "../../assets/images/feature-details-mockup1.png";
 import mockup2 from "../../assets/images/feature-details-mockup2.png";
 import mockup3 from "../../assets/images/feature-details-mockup3.png";
@@ -9,9 +10,9 @@ import { useGSAP } from "@gsap/react";
 
 gsap.registerPlugin(ScrollTrigger, useGSAP);
 
-// import "./animation.css";
+import "./animation.css";
 
-const FeatureMockup = () => {
+const FeatureMockup = ({ elements }) => {
   const img1 = useRef();
   const img2 = useRef();
   const img3 = useRef();
@@ -20,16 +21,39 @@ const FeatureMockup = () => {
 
   const container = useRef();
 
+  // image animation
   useGSAP(
     () => {
-      gsap.to(imgHolder.current, {
+      const tl = gsap.timeline();
+
+      tl.to(img2.current, {
         scrollTrigger: {
-          trigger: container.current,
-          start: "top bottom",
-          end: "bottom top",
-          scrub: true,
+          trigger: elements[1].current,
+          start: "-15% 30%",
+          end: "20% 40%",
+          toggleActions: "play complete reverse reverse",
+          // markers: {
+          //   startColor: "lightBlue",
+          //   endColor: "lightBlue",
+          // },
         },
-        scale: 0.8,
+        top: "0%",
+        duration: 1,
+        ease: "Power1.easeInOut",
+      }).to(img3.current, {
+        scrollTrigger: {
+          trigger: elements[2].current,
+          start: "-5% 30%",
+          end: "10% 40%",
+          toggleActions: "play complete reverse reverse",
+          // markers: {
+          //   startColor: "blue",
+          //   endColor: "blue",
+          // },
+        },
+        top: "0%",
+        duration: 1,
+        ease: "Power1.easeInOut",
       });
     },
     { scope: container }
@@ -40,7 +64,7 @@ const FeatureMockup = () => {
       {/* image holder */}
       <div
         ref={imgHolder}
-        className="w-[283px] h-[653px] rounded-[30px] overflow-hidden ft-animation-holder relative feature-details-container"
+        className="w-[320px] h-[680px] rounded-[30px] overflow-hidden ft-animation-holder relative "
       >
         <img
           ref={img1}
@@ -66,3 +90,8 @@ const FeatureMockup = () => {
 };
 
 export default FeatureMockup;
+
+FeatureMockup.propTypes = {
+  sectionContainer: PropTypes.node,
+  elements: PropTypes.array,
+};
