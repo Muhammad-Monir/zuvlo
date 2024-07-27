@@ -60,7 +60,7 @@ const FeatureMockup = ({ elements }) => {
   );
 
   return (
-    <div ref={container} className="sticky top-5">
+    <div ref={container} className="sticky top-5 pt-28 ">
       {/* image holder */}
       <div
         ref={imgHolder}
