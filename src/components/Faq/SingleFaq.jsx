@@ -13,14 +13,6 @@ const SingleFaq = ({ faq, isOpen, openFaq }) => {
     setContentOpen(isOpen);
   }, [isOpen]);
 
-  const handleClick = () => {
-    openFaq();
-
-    if (!isOpen) {
-      setContentOpen(open);
-    }
-  };
-
   return (
     <div className="single-faq">
       <div className="space-y-2 p-6 rounded-lg bg-[#fff]">
