@@ -9,6 +9,7 @@ import Lenis from "lenis";
 import MarketingArea from "./components/MarketingArea/MarketingArea";
 import Advertisement from "./components/Advertisement/Advertisement";
 import Footer from "./components/Footer/Footer";
+import Faq from "./components/Faq/Faq";
 
 const App = () => {
   useEffect(() => {
@@ -36,6 +37,7 @@ const App = () => {
       <FeatureDetails />
       <GridFeature />
       <MarketingArea />
+      <Faq />
       <Advertisement />
       {/* main content area ends */}
 

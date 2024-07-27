@@ -38,3 +38,7 @@ body {
 .creator--holder .single--creator:nth-child(even) {
   align-self: flex-end;
 }
+
+.ReactCollapse--collapse {
+  transition: height 500ms;
+}
