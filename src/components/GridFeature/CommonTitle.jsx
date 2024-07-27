@@ -11,8 +11,12 @@ const CommonTitle = ({ children = "Common Title", color = "#141414" }) => {
       disable: "mobile",
       easing: "ease-in-out",
       duration: 500,
+      offset: 200,
     });
+
+    AOS.refresh();
   }, []);
+
   return (
     <h4
       data-aos="fade-up"

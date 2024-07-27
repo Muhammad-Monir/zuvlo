@@ -37,6 +37,14 @@ const Faq = () => {
     },
   ];
 
+  const handleFaq = (index) => {
+    if (openIndex === index) {
+      setOpenIndex(null);
+    } else {
+      setOpenIndex(index);
+    }
+  };
+
   return (
     <section className="container pb-[250px] ">
       <div className="text-center space-y-5">
@@ -52,7 +60,7 @@ const Faq = () => {
         {faqList.map((item, index) => (
           <SingleFaq
             isOpen={openIndex === index}
-            openFaq={() => setOpenIndex(index)}
+            openFaq={() => handleFaq(index)}
             faq={item}
             key={index}
           />
