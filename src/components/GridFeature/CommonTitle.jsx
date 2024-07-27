@@ -23,7 +23,7 @@ const CommonTitle = ({ children = "Common Title", color = "#141414" }) => {
       style={{
         color: color,
       }}
-      className="text-[32px] font-semibold leading-[42px]   "
+      className=" text-[22px] leading-7  xl:text-[32px] font-semibold xl:leading-[42px]   "
     >
       {children}
     </h4>

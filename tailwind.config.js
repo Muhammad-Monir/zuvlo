@@ -9,6 +9,7 @@ export default {
         md: "768px",
         lg: "992px",
         xl: "1200px",
+        xlg: "1366px",
         "2xl": "1600px",
       },
 
@@ -17,6 +18,7 @@ export default {
         screens: {
           "2xl": "1640px",
         },
+        padding: '1rem',
       },
       colors: {
         textBlack: "#161613",

@@ -38,7 +38,7 @@ const Creators = () => {
       creator_name: "Jamal Sheikh",
       creator_role: "AI Creator",
       followers: "205k",
-    }, 
+    },
     {
       creator_img:
         "https://images.pexels.com/photos/26852336/pexels-photo-26852336/free-photo-of-portrait-of-couple-sitting-together.jpeg?auto=compress&cs=tinysrgb&w=600",
@@ -49,13 +49,13 @@ const Creators = () => {
   ];
 
   return (
-    <section className="py-[150px]">
+    <section className=" py-[60px] xl:py-[150px]">
       <SectionTitle>Trusted by the{`world's`} biggest creators</SectionTitle>
 
       {/* creator slider area */}
-      <div className="pt-[120px]">
+      <div className=" pt-[60px] xl:pt-[120px]">
         <Marquee>
-          <div className="flex  gap-12 mr-12 h-[612px] creator--holder ">
+          <div className="flex gap-6 xl:gap-12 mr-6 xl:mr-12 xl:h-[612px] creator--holder ">
             {creators.map((singleCreator, index) => (
               <CreatorSlide creator={singleCreator} key={index} />
             ))}

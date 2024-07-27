@@ -6,7 +6,7 @@ const SectionTitle = ({ children = "Section Title", color }) => {
       style={{
         color: color ? `${color}` : "",
       }}
-      className={`text-center text-[64px] font-bold  leading-[84px] ${
+      className={`text-center text-[32px] leading-[42px] xl:text-[64px] font-bold  xl:leading-[84px] ${
         color ? `text-[${color}]` : `text-textBlack`
       }  `}
     >

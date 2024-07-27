@@ -35,10 +35,12 @@ body {
   transition: 0.3s ease-in-out;
 }
 
-.creator--holder .single--creator:nth-child(even) {
-  align-self: flex-end;
-}
-
 .ReactCollapse--collapse {
   transition: height 500ms;
+}
+
+@media only screen and (min-width: 1200px) {
+  .creator--holder .single--creator:nth-child(even) {
+    align-self: flex-end;
+  }
 }

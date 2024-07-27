@@ -12,21 +12,21 @@ const GridFeature = () => {
   return (
     <section className="container pt-[54px]">
       {/* title */}
-      <h3 className="text-[64px] font-bold leading-[84px] text-[#333] text-center ">
+      <h3 className=" text-[32px] leading-[42px] xl:text-[64px] font-bold xl:leading-[84px] text-[#333] text-center ">
         Everything You Need to Succeed, All in One Place
       </h3>
 
       {/* grid area wrapper */}
-      <div className="py-[120px] grid-feature space-y-8 ">
+      <div className=" py-[60px] xl:py-[120px] grid-feature space-y-8 ">
         {/* top grid */}
-        <div className="grid grid-cols-12 gap-8">
+        <div className="xl:grid xl:grid-cols-12 gap-4 xl:gap-8 flex flex-col ">
           {/* first */}
-          <div className="single-content p-9 bg-[#C3B2E7] col-span-4   ">
+          <div className="single-content p-4 xl:p-9 bg-[#C3B2E7] xl:col-span-4   ">
             <CommonTitle color="#52225E">AI Features</CommonTitle>
 
             {/* img wrapper */}
-            <div className="my-6">
-              <div className="w-[420px] h-[388px]  ">
+            <div className=" my-2 xl:my-6">
+              <div className="xl:w-[420px] xl:h-[388px] w-[300px] h-[250px] ">
                 <img
                   className="w-full h-full object-contain"
                   src={figure1}
@@ -43,9 +43,9 @@ const GridFeature = () => {
           </div>
 
           {/* second */}
-          <div className="col-span-8 gap-8 flex flex-col">
+          <div className="xl:col-span-8 gap-4 xl:gap-8 flex flex-col">
             {/* top one */}
-            <div className="single-content  w-full px-[46px] py-1.5 bg-[#F682A5] flex justify-between items-center ">
+            <div className="single-content  w-full px-8 xl:px-[46px] py-4 xl:py-1.5 bg-[#F682A5] flex flex-col xl:flex-row justify-between items-center gap-4 xl:gap-0 ">
               <div className="space-y-4">
                 <CommonTitle color="#52225E">24/7 Support</CommonTitle>
 
@@ -55,9 +55,9 @@ const GridFeature = () => {
                 </CommonSubTItle>
               </div>
 
-              <div className="w-[375px] h-[295px]  ">
+              <div className="xl:w-[375px] xl:h-[295px] w-[300px] h-[250px] ">
                 <img
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-contain xl:object-cover"
                   src={figure2}
                   alt=""
                 />
@@ -65,7 +65,7 @@ const GridFeature = () => {
             </div>
 
             {/* lower one */}
-            <div className="flex gap-8 ">
+            <div className="flex gap-8 flex-col xl:flex-row ">
               <div className="px-8 py-5 flex-1 bg-[#C9DA8F]  single-content ">
                 {/* image */}
                 <div className="w-[220px] h-[145px] mx-auto mb-6 ">
@@ -110,8 +110,8 @@ const GridFeature = () => {
         </div>
 
         {/* bottom grid */}
-        <div className="grid grid-cols-12 gap-8">
-          <div className="col-span-8 single-content pl-[46px] py-[145px] bg-[#F9A474] relative ">
+        <div className="xl:grid xl:grid-cols-12 gap-4 xl:gap-8 flex flex-col">
+          <div className="xl:col-span-8 single-content pl-[46px] py-[145px] bg-[#F9A474] relative ">
             <div className="space-y-4 ">
               <CommonTitle color="#582614">Pay-to-View</CommonTitle>
 
@@ -129,7 +129,7 @@ const GridFeature = () => {
               </div>
             </div>
           </div>
-          <div className="col-span-4 single-content p-10 bg-[#B8CEDC] relative ">
+          <div className="xl:col-span-4 single-content p-10 bg-[#B8CEDC] relative ">
             <div className="space-y-4">
               <CommonTitle color="#184363">Advanced Insights</CommonTitle>
 
@@ -139,11 +139,11 @@ const GridFeature = () => {
             </div>
 
             {/* images */}
-            <div className="w-[375px] h-[375px] absolute right-0 -bottom-[150px] ">
+            <div className="xl:w-[375px] xl:h-[375px] w-[285px] h-[250px] absolute -right-5 xl:right-0 -bottom-[150px] ">
               <img
                 src={figure6}
                 alt=""
-                className="w-full h-full object-cover"
+                className="w-full h-full object-contain xl:object-cover"
               />
             </div>
           </div>

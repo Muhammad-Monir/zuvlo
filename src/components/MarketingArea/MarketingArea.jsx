@@ -16,8 +16,8 @@ const MarketingArea = () => {
       </h3>
 
       {/* content wrapper */}
-      <div className="flex gap-5  ">
-        <div className="px-[60px] pt-[64px]  pb-[250px] rounded-3xl bg-[#E4F1FF] flex-1 relative ">
+      <div className="flex gap-5 flex-col xl:flex-row ">
+        <div className="px-[60px] pt-[64px]  pb-[250px] rounded-3xl bg-[#E4F1FF] flex-1 relative overflow-hidden ">
           <div className="max-w-[380px] mx-auto ">
             <h4
               style={{

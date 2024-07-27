@@ -25,7 +25,7 @@ const App = () => {
 
   return (
     <>
-      <div className="hero--nav--bg--wrapper">
+      <div className="hero--nav--bg--wrapper bg-[url('')!important]">
         {/* Navbar starts */}
         <Navbar />
         {/* Navbar ends */}
@@ -33,12 +33,14 @@ const App = () => {
       </div>
 
       {/* main content area starts */}
-      <Creators />
-      <FeatureDetails />
-      <GridFeature />
-      <MarketingArea />
-      <Faq />
-      <Advertisement />
+      <main>
+        <Creators />
+        <FeatureDetails />
+        <GridFeature />
+        <MarketingArea />
+        <Faq />
+        <Advertisement />
+      </main>
       {/* main content area ends */}
 
       <Footer />
