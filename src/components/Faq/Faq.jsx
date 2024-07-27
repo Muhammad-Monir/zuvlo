@@ -1,6 +1,8 @@
+import { useState } from "react";
 import SingleFaq from "./SingleFaq";
 
 const Faq = () => {
+  const [openIndex, setOpenIndex] = useState(null);
 
   const faqList = [
     {
@@ -48,7 +50,12 @@ const Faq = () => {
       {/* faq wrapper */}
       <div className="pt-[90px] flex flex-col gap-5">
         {faqList.map((item, index) => (
-          <SingleFaq faq={item} key={index} />
+          <SingleFaq
+            isOpen={openIndex === index}
+            openFaq={() => setOpenIndex(index)}
+            faq={item}
+            key={index}
+          />
         ))}
       </div>
     </section>

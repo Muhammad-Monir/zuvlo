@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Collapse } from "react-collapse";
 import PropTypes from "prop-types";
 import { GoPlusCircle } from "react-icons/go";
@@ -6,14 +6,18 @@ import { FiMinusCircle } from "react-icons/fi";
 
 import "./faq.css";
 
-const SingleFaq = ({ faq }) => {
+const SingleFaq = ({ faq, isOpen, openFaq }) => {
   const [contentOpen, setContentOpen] = useState(false);
+
+  useEffect(() => {
+    setContentOpen(isOpen);
+  }, [isOpen]);
 
   return (
     <div className="single-faq">
       <div className="space-y-2 p-6 rounded-lg bg-[#fff]">
         <div
-          onClick={() => setContentOpen(!contentOpen)}
+          onClick={() => openFaq()}
           className="flex items-center justify-between cursor-pointer"
         >
           <h4 className="text-2xl text-[#101828] font-semibold ">
@@ -42,6 +46,8 @@ const SingleFaq = ({ faq }) => {
 
 SingleFaq.propTypes = {
   faq: PropTypes.object,
+  isOpen: PropTypes.bool,
+  openFaq: PropTypes.func,
 };
 
 export default SingleFaq;
