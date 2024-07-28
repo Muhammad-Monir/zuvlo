@@ -3,11 +3,14 @@ import SignUpBtn from "../Buttons/SignUpBtn";
 import lineThrough from "../../assets/images/avatar-line-through.png";
 import charAvatar from "../../assets/images/content-creators-avatar-group.png";
 
-import mockup1 from "../../assets/images/banner-mob-mockup1.png";
-import mockup2 from "../../assets/images/banner-mob-mockup2.png";
+import mockup1 from "../../assets/images/web-feature-img1.png";
+import mockup2 from "../../assets/images/web-feature-img2.png";
 
 import flower from "../../assets/images/flower-shadow-banner.png";
 import FeaturedIn from "./FeaturedIn";
+
+// import styles
+import "./hero-banner.css";
 
 const HeroBanner = () => {
   const handleMouseMove = (event) => {
@@ -63,12 +66,12 @@ const HeroBanner = () => {
   return (
     <section
       id="hero--banner"
-      className="container pt-12  xl:pt-[160px] pb-16 xl:pb-[100px]  relative"
+      className="container pt-12  xl:pt-[160px] pb-16 xl:pb-[100px]  relative flex flex-col items-center  xl:block "
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
     >
       {/* text area starts */}
-      <div className="xl:max-w-[70%] pb-[500px] xl:pb-[300px]">
+      <div className="xl:max-w-[70%] pb-0 xl:pb-[300px]">
         <h3 className=" text-[32px] xl:text-[80px] font-bold text-black leading-[48px] xl:leading-[100px] ">
           Join Forces, Innovate Freely, and Reap the Rewards
         </h3>
@@ -89,11 +92,7 @@ const HeroBanner = () => {
         </div>
       </div>
 
-      {/* text area ends */}
-
       {/* mockup and graphics */}
-
-      {/* avatar line through group */}
       <div className="absolute right-0 bottom-32 w-[200px] h-[800px] hidden xl:block">
         {/* first graphics */}
         <img
@@ -119,17 +118,17 @@ const HeroBanner = () => {
       {/* mobile mockup group */}
       <div
         id="hero--banner--mockup"
-        className="absolute top-[300px] right-auto z-50  left-1/2 -translate-x-1/2 xl:top-[160px]  xl:right-[300px] xl:left-auto xl:translate-x-0 "
+        className=" relative -mt-[50px] mb-[600px] xl:mt-0 xl:mb-0 xl:absolute top-0 right-auto z-50 w-fit left-[18%] -translate-x-[18%]   xl:top-[160px]  xl:right-[300px] xl:left-auto xl:translate-x-0  "
       >
         {/* first image */}
         <img
-          className=" min-w-[300px] max-w-[300px]  xl:min-w-[485px] object-contain xl:object-fill xl:max-w-[485px] h-[660px] mockup mockup-one absolute -top-6 right-5 z-30  "
+          className=" min-w-[300px] max-w-[300px]  xl:min-w-[485px] object-contain xl:object-fill xl:max-w-[485px] h-[660px] mockup mockup-one absolute -top-6 -right-12 xl:right-5 z-30 "
           src={mockup1}
           alt=""
         />
         {/* second image */}
         <img
-          className=" min-w-[250px] max-w-[250px] object-contain xl:object-fill xl:min-w-[350px] xl:max-w-[350px] h-[350px]  mockup mockup-two absolute top-14 -right-10 z-20  "
+          className=" min-w-[250px] max-w-[250px] object-contain xl:object-fill xl:min-w-[350px] xl:max-w-[350px] h-[350px]  mockup mockup-two absolute top-20 -left-[120px]  xl:top-14 xl:-right-14 z-20 xl:left-auto  "
           src={mockup2}
           alt=""
         />

@@ -5,19 +5,21 @@ import SignUpBtn from "../Buttons/SignUpBtn";
 import banner from "../../assets/images/sign-up-banner.png";
 
 const MarketingArea = () => {
-  const titleStyles = "text-[40px] font-semibold leading-[52px] text-center ";
-  const subtitleStyles = "text-[18px] leading-7 text-center";
+  const titleStyles =
+    " text-[28px] leading-[32px] xl:text-[40px] font-semibold xl:leading-[52px] text-center pb-4 xl:pb-0 ";
+  const subtitleStyles =
+    " text-base xl:text-[18px] leading-6 xl:leading-7 text-center";
 
   return (
-    <section className="container pb-[150px] ">
-      <h3 className="text-[55px] font-semibold leading-[67px] max-w-[1020px] mx-auto pb-[90px]  ">
+    <section className="container pb-14 xl:pb-[150px] ">
+      <h3 className=" text-[32px]  xl:text-[55px] font-semibold leading-[48px] text-center xl:leading-[67px] max-w-[1020px] mx-auto pb-14 xl:pb-[90px]  ">
         {" "}
         Master Online Marketing with Ease and Independence, Completely Free{" "}
       </h3>
 
       {/* content wrapper */}
       <div className="flex gap-5 flex-col xl:flex-row ">
-        <div className="px-[60px] pt-[64px]  pb-[250px] rounded-3xl bg-[#E4F1FF] flex-1 relative overflow-hidden ">
+        <div className=" px-8 xl:px-[60px] pt-8 xl:pt-[64px] pb-[200px] xl:pb-[250px] rounded-3xl bg-[#E4F1FF] flex-1 relative overflow-hidden ">
           <div className="max-w-[380px] mx-auto ">
             <h4
               style={{
@@ -39,11 +41,11 @@ const MarketingArea = () => {
           </div>
 
           {/* images */}
-          <div className="w-[720px] h-[240px] absolute left-1/2 -translate-x-1/2 bottom-0  ">
+          <div className=" w-[350px] h-[220px]  xl:w-[720px] xl:h-[240px] absolute left-1/2 -translate-x-1/2 bottom-0  ">
             <img src={feature1} alt="" className="w-full h-full object-cover" />
           </div>
         </div>
-        <div className="px-[60px] pt-[64px] pb-[250px] rounded-3xl bg-[#E4E7FF] flex-1 relative overflow-hidden">
+        <div className="px-8 xl:px-[60px] pt-8 xl:pt-[64px] pb-[250px] rounded-3xl bg-[#E4E7FF] flex-1 relative overflow-hidden">
           <div className="max-w-[380px] mx-auto mb-4">
             <h4
               style={{
@@ -98,20 +100,20 @@ const MarketingArea = () => {
           </a>
 
           {/* images */}
-          <div className="w-[720px] h-[240px] absolute left-1/2 -translate-x-1/2 -bottom-5 overflow-hidden ">
+          <div className=" w-[350px] h-[220px]  xl:w-[720px] xl:h-[240px] absolute left-1/2 -translate-x-1/2 -bottom-5 overflow-hidden ">
             <img src={feature2} alt="" className="w-full h-full object-cover" />
           </div>
         </div>
       </div>
 
       {/* sign up banner */}
-      <div className="mt-4 w-full py-[75px] px-[58px]  rounded-3xl bg-[#FAF1E3] relative overflow-hidden">
-        <div className="max-w-[782px] text-center">
-          <h3 className="text-[64px] leading-[84px] font-semibold text-[#4F340A]  ">
+      <div className="mt-4 w-full py-6 xl:py-[75px] px-6 xl:px-[58px]  rounded-3xl bg-[#FAF1E3] relative overflow-hidden">
+        <div className="max-w-[782px] text-center mb-[250px] xl:mb-0">
+          <h3 className=" text-[32px] leading-[48px]  xl:text-[64px] xl:leading-[84px] font-semibold text-[#4F340A]  ">
             Sign up this month, <span className="text-pinkRed">earn more</span>{" "}
           </h3>
 
-          <p className=" text-[18px] leading-7 text-[#4F340A] max-w-[412px] mx-auto pb-[55px] ">
+          <p className=" text-[18px] leading-7 text-[#4F340A] max-w-[412px] mx-auto pb-5 xl:pb-[55px] ">
             {" "}
             Our Head of Content, Leni, guides you through your first successful
             funnel{" "}
@@ -121,8 +123,12 @@ const MarketingArea = () => {
         </div>
 
         {/* images */}
-        <div className="w-[575px] h-[405px] absolute right-8 bottom-0 ">
-          <img src={banner} alt="" className="w-full h-full object-cover" />
+        <div className=" w-[350px] h-[300px]  xl:w-[575px] xl:h-[405px] absolute left-1/2 -translate-x-1/2 xl:translate-x-0 xl:left-auto xl:right-8 -bottom-8 xl:bottom-0 ">
+          <img
+            src={banner}
+            alt=""
+            className="w-full h-full object-contain xl:object-cover"
+          />
         </div>
       </div>
     </section>

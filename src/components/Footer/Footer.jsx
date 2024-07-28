@@ -7,18 +7,22 @@ import { FaSlack } from "react-icons/fa";
 
 const Footer = () => {
   const linkStyle = `p-1.5 flex items-center justify-center rounded-lg bg-[#FF2919] `;
-  const linkIconStyle = `text-[28px] text-white`;
+  const linkIconStyle = `text-[22px] xl:text-[28px] text-white`;
 
   const inputStyle = `px-4 py-3 w-full rounded-lg bg-[#1F1F1F] border border-solid border-[#484848] text-[14px] leading-5 text-[#A1A1A1] focus:outline-none `;
 
   return (
-    <footer className="container pt-[115px] pb-5 relative overflow-hidden ">
+    <footer className="container pt-14 xl:pt-[115px] pb-5 relative overflow-hidden ">
       {/* top area */}
-      <div className="flex items-center justify-between pb-10 border-b border-solid border-[#484848] ">
+      <div className="flex flex-col gap-8 xl:gap-0 xl:flex-row items-center justify-between pb-10 border-b border-solid border-[#484848] ">
         {/* left  */}
         <div className="space-y-6">
-          <div className="w-[245px] h-[36px] ">
-            <img className="w-full h-full object-cover" src={logo} alt="" />
+          <div className="mx-auto xl:mx-0 w-[200px] h-[30px] xl:w-[245px] xl:h-[36px] ">
+            <img
+              className="w-full h-full object-contain xl:object-cover"
+              src={logo}
+              alt=""
+            />
           </div>
 
           {/* links wrapper */}
@@ -47,14 +51,14 @@ const Footer = () => {
         </div>
 
         {/* right */}
-        <div className="px-10 py-7 bg-[#262626] rounded-3xl max-w-[605px] ">
+        <div className=" px-5 xl:px-10 py-7 bg-[#262626] rounded-3xl max-w-[605px] ">
           <p className="text-base leading-6  text-[#A1A1A1]">
             Sign up for our newsletter and join the growing Rig.dev community.
           </p>
 
           {/* newsletter form */}
           <form className="pt-6">
-            <div className="flex items-center gap-2.5">
+            <div className="flex flex-col xl:flex-row items-center gap-4 xl:gap-2.5">
               <input
                 type="text"
                 name="first name"
@@ -80,7 +84,7 @@ const Footer = () => {
       </div>
 
       {/* bottom */}
-      <div className="pt-10 flex items-center gap-6 text-[14px] text-textBlackV2 leading-5  ">
+      <div className=" pt-5 xl:pt-10 flex flex-wrap justify-center xl:justify-start items-center  gap-y-4 gap-3 xl:gap-6 text-[14px] text-textBlackV2 leading-5  ">
         <span>© {new Date().getFullYear()} Rig.Dev ApS</span>
 
         <a href="#">Terms of Service</a>
@@ -91,7 +95,7 @@ const Footer = () => {
       <div className="w-[1255px] h-[1255px] rounded-[1255px] bg-[#FF2919] blur-[127px] absolute left-1/2 -translate-x-1/2 -top-40 opacity-[0.21] -z-10"></div>
 
       {/* star */}
-      <div className="absolute left-[45%] -translate-x-[45%] top-11  z-10 ">
+      <div className="absolute left-[45%] -translate-x-[45%] top-11  z-10 hidden xl:block ">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="34"
@@ -106,7 +110,7 @@ const Footer = () => {
         </svg>
       </div>
 
-      <div className="absolute left-[50%] -translate-x-[50%] top-16 z-10">
+      <div className="absolute left-[50%] -translate-x-[50%] top-16 z-10 hidden xl:block">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="57"

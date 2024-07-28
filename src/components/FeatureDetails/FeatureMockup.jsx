@@ -1,8 +1,8 @@
 import { useRef } from "react";
 import PropTypes from "prop-types";
-import mockup1 from "../../assets/images/feature-details-mockup1.png";
-import mockup2 from "../../assets/images/feature-details-mockup2.png";
-import mockup3 from "../../assets/images/feature-details-mockup3.png";
+import mockup1 from "../../assets/images/web-feature-img3.png";
+import mockup2 from "../../assets/images/web-feature-img4.png";
+import mockup3 from "../../assets/images/web-feature-img5.png";
 
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";

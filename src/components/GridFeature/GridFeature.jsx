@@ -65,10 +65,10 @@ const GridFeature = () => {
             </div>
 
             {/* lower one */}
-            <div className="flex gap-8 flex-col xl:flex-row ">
+            <div className="flex gap-4 xl:gap-8 flex-col xl:flex-row ">
               <div className="px-8 py-5 flex-1 bg-[#C9DA8F]  single-content ">
                 {/* image */}
-                <div className="w-[220px] h-[145px] mx-auto mb-6 ">
+                <div className="  w-[180px] h-[135px] xl:w-[220px] xl:h-[145px] mx-auto mb-6 ">
                   <img
                     src={figure3}
                     alt=""
@@ -85,10 +85,10 @@ const GridFeature = () => {
                 </div>
               </div>
               <div
-                className="px-8 pt-6
+                className="px-8 pt-6 
                flex-1 bg-[#FEDF6F] single-content relative "
               >
-                <div className="space-y-4">
+                <div className="space-y-4 mb-24 xl:mb-0">
                   <CommonTitle color="#4A411E">Smart Messaging</CommonTitle>
 
                   <CommonSubTItle color="#4A411E">
@@ -97,7 +97,7 @@ const GridFeature = () => {
                 </div>
 
                 {/* image */}
-                <div className="w-[370px] h-[395px] absolute left-1/2 -translate-x-1/2 -bottom-[240px] rounded-3xl overflow-hidden ">
+                <div className="w-[370px] h-[395px] scale-[.7] xl:scale-100 absolute left-1/2 -translate-x-1/2 -bottom-[260px] xl:-bottom-[240px] rounded-3xl overflow-hidden ">
                   <img
                     src={figure4}
                     alt=""
@@ -111,26 +111,25 @@ const GridFeature = () => {
 
         {/* bottom grid */}
         <div className="xl:grid xl:grid-cols-12 gap-4 xl:gap-8 flex flex-col">
-          <div className="xl:col-span-8 single-content pl-[46px] py-[145px] bg-[#F9A474] relative ">
-            <div className="space-y-4 ">
+          <div className="xl:col-span-8 single-content pl-[46px] py-0 pt-5 pb-20 xl:py-[145px] bg-[#F9A474] relative ">
+            <div className="space-y-4 relative z-30">
               <CommonTitle color="#582614">Pay-to-View</CommonTitle>
 
               <CommonSubTItle color="#582614">
                 Send as a group with friends or individually
               </CommonSubTItle>
-
-              {/* images */}
-              <div className="w-[790px] h-[465px] absolute -right-8 -top-4">
-                <img
-                  className="w-full h-full object-cover"
-                  src={figure5}
-                  alt=""
-                />
-              </div>
+            </div>
+            {/* images */}
+            <div className="w-[790px] h-[465px] absolute -right-[520px] xl:-right-8 xl:-top-4 z-10  top-0 xl:scale-100 ">
+              <img
+                className="w-full h-full object-cover"
+                src={figure5}
+                alt=""
+              />
             </div>
           </div>
-          <div className="xl:col-span-4 single-content p-10 bg-[#B8CEDC] relative ">
-            <div className="space-y-4">
+          <div className="xl:col-span-4 single-content p-5 xl:p-10 bg-[#B8CEDC] relative ">
+            <div className="space-y-4 mb-24 xl:mb-0">
               <CommonTitle color="#184363">Advanced Insights</CommonTitle>
 
               <CommonSubTItle color="#184363">
@@ -139,7 +138,7 @@ const GridFeature = () => {
             </div>
 
             {/* images */}
-            <div className="xl:w-[375px] xl:h-[375px] w-[285px] h-[250px] absolute -right-5 xl:right-0 -bottom-[150px] ">
+            <div className="xl:w-[375px] xl:h-[375px] w-[285px] h-[250px] absolute -right-5 xl:right-0 -bottom-[140px] xl:-bottom-[150px] ">
               <img
                 src={figure6}
                 alt=""

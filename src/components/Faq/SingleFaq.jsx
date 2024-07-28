@@ -15,23 +15,23 @@ const SingleFaq = ({ faq, isOpen, openFaq }) => {
 
   return (
     <div className="single-faq">
-      <div className="space-y-2 p-6 rounded-lg bg-[#fff]">
+      <div className="space-y-2 p-4 xl:p-6 rounded-lg bg-[#fff]">
         <div
           onClick={() => openFaq()}
           className="flex items-center justify-between cursor-pointer"
         >
-          <h4 className="text-2xl text-[#101828] font-semibold ">
+          <h4 className=" text-lg xl:text-2xl text-[#101828] font-semibold ">
             {faq.title}
           </h4>
 
           {/* icon */}
-          <div className="text-2xl">
+          <div className=" text-lg xl:text-2xl">
             {contentOpen ? <FiMinusCircle /> : <GoPlusCircle />}
           </div>
         </div>
 
         <Collapse isOpened={contentOpen}>
-          <p className="max-w-[1285px] text-[18px] leading-7 text-[#667085]  ">
+          <p className="max-w-[1285px] text-[14=5px] xl:text-[18px] leading-7 text-[#667085]  ">
             {" "}
             {faq.description}{" "}
           </p>

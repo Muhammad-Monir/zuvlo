@@ -27,13 +27,7 @@ body {
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
-#hero--banner--mockup .mockup {
-  transform-style: preserve-3d;
-}
 
-#hero--banner--mockup .mockup.smooth {
-  transition: 0.3s ease-in-out;
-}
 
 .ReactCollapse--collapse {
   transition: height 500ms;
