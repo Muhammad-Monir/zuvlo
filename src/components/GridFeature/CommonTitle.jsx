@@ -1,25 +1,8 @@
 import PropTypes from "prop-types";
 
-import AOS from "aos";
-import "aos/dist/aos.css";
-import { useEffect } from "react";
-
 const CommonTitle = ({ children = "Common Title", color = "#141414" }) => {
-  useEffect(() => {
-    AOS.init({
-      once: true,
-      disable: "mobile",
-      easing: "ease-in-out",
-      duration: 500,
-      offset: 200,
-    });
-
-    AOS.refresh();
-  }, []);
-
   return (
     <h4
-      data-aos="fade-up"
       style={{
         color: color,
       }}
