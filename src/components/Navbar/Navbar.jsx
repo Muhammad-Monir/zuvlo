@@ -47,9 +47,6 @@ const Navbar = () => {
           } `}
         >
           <a className={linkStyle} href="#">
-            fanvue AI
-          </a>
-          <a className={linkStyle} href="#">
             Our Mission
           </a>
           <a className={linkStyle} href="#">
