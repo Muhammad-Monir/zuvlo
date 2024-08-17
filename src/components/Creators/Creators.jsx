@@ -54,7 +54,7 @@ const Creators = () => {
 
       {/* creator slider area */}
       <div className=" pt-[60px] xl:pt-[120px]">
-        <Marquee>
+        <Marquee  >
           <div className="flex gap-6 xl:gap-12 mr-6 xl:mr-12 xl:h-[612px] creator--holder ">
             {creators.map((singleCreator, index) => (
               <CreatorSlide creator={singleCreator} key={index} />

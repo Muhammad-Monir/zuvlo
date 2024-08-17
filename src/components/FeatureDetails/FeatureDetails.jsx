@@ -46,7 +46,7 @@ const FeatureDetails = () => {
   return (
     <section
       ref={sectionContainer}
-      className=" xl:pt-80 xl:pb-12 relative feature-details-container "
+      className=" xl:pt-32 xl:pb-12 xl:mb-20 relative feature-details-container "
     >
       {/* main content */}
       <div className="container flex gap-[225px] relative z-20 xl:px-[72px] ">
