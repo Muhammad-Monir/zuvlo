@@ -2,7 +2,7 @@ import banner from "../../assets/images/mobile-mockup-ad.png";
 
 const Advertisement = () => {
   return (
-    <section className="  container pb-5 xl:pb0 ">
+    <section className="  container pb-5 xl:pb-0 xl:pb0 ">
       <div className="px-4 xl:pl-[115px] pt-6 xl:pt-[42px] pb-[60px] xl:pb-[160px]  bg-[#262626] rounded-3xl relative overflow-hidden">
         <h3
           className=" text-2xl leading-10

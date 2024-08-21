@@ -1,6 +1,6 @@
 import flowerShape from "../../assets/images/flower-art.png";
 import SingleFeature from "./SingleFeature";
-import featureBg from "../../assets/images/feature-details-bg.png";
+import featureBg from "../../assets/images/feature-details-orange.png";
 import FeatureMockup from "./FeatureMockup";
 import { useRef } from "react";
 

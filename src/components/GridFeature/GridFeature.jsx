@@ -21,8 +21,8 @@ const GridFeature = () => {
         {/* top grid */}
         <div className="xl:grid xl:grid-cols-12 gap-4 xl:gap-8 flex flex-col ">
           {/* first */}
-          <div className="single-content p-4 xl:p-9 bg-[#C3B2E7] xl:col-span-4   ">
-            <CommonTitle color="#52225E">AI Features</CommonTitle>
+          <div className="single-content p-4 xl:p-9 bg-[#F9BDB5] xl:col-span-4   ">
+            <CommonTitle color="#292929">AI Features</CommonTitle>
 
             {/* img wrapper */}
             <div className=" my-2 xl:my-6">
@@ -45,11 +45,11 @@ const GridFeature = () => {
           {/* second */}
           <div className="xl:col-span-8 gap-4 xl:gap-8 flex flex-col">
             {/* top one */}
-            <div className="single-content  w-full px-8 xl:px-[46px] py-4 xl:py-1.5 bg-[#F682A5] flex flex-col xl:flex-row justify-between items-center gap-4 xl:gap-0 ">
+            <div className="single-content  w-full px-8 xl:px-[46px] py-4 xl:py-1.5 bg-[#F94F64] flex flex-col xl:flex-row justify-between items-center gap-4 xl:gap-0 ">
               <div className="space-y-4">
-                <CommonTitle color="#52225E">24/7 Support</CommonTitle>
+                <CommonTitle color=" #131313">24/7 Support</CommonTitle>
 
-                <CommonSubTItle color="#52225E">
+                <CommonSubTItle color=" #131313">
                   Schedule all your cards and gifts now and we’ll send them
                   later
                 </CommonSubTItle>
@@ -66,7 +66,7 @@ const GridFeature = () => {
 
             {/* lower one */}
             <div className="flex gap-4 xl:gap-8 flex-col xl:flex-row ">
-              <div className="px-8 py-5 flex-1 bg-[#C9DA8F]  single-content ">
+              <div className="px-8 py-5 flex-1 bg-[#C00E01]  single-content ">
                 {/* image */}
                 <div className="  w-[180px] h-[135px] xl:w-[220px] xl:h-[145px] mx-auto mb-6 ">
                   <img
@@ -77,21 +77,21 @@ const GridFeature = () => {
                 </div>
 
                 <div className="space-y-1">
-                  <CommonTitle color="#1C471F">Subscriptions</CommonTitle>
+                  <CommonTitle color="#FFF">Subscriptions</CommonTitle>
 
-                  <CommonSubTItle color="#1C471F">
+                  <CommonSubTItle color="#FFF">
                     Access all your gifts and save up your Givingli Cash
                   </CommonSubTItle>
                 </div>
               </div>
               <div
                 className="px-8 pt-6 
-               flex-1 bg-[#FEDF6F] single-content relative "
+               flex-1 bg-[#FF2919] single-content relative "
               >
                 <div className="space-y-4 mb-24 xl:mb-0">
-                  <CommonTitle color="#4A411E">Smart Messaging</CommonTitle>
+                  <CommonTitle color="#FFF">Smart Messaging</CommonTitle>
 
-                  <CommonSubTItle color="#4A411E">
+                  <CommonSubTItle color="#FFF">
                     Track your gifts, group chats, and sent cards
                   </CommonSubTItle>
                 </div>
@@ -111,28 +111,28 @@ const GridFeature = () => {
 
         {/* bottom grid */}
         <div className="xl:grid xl:grid-cols-12 gap-4 xl:gap-8 flex flex-col">
-          <div className="xl:col-span-8 single-content pl-[46px] py-0 pt-5 pb-20 xl:py-[145px] bg-[#F9A474] relative ">
+          <div className="xl:col-span-8 single-content pl-[46px] py-0 pt-5 pb-36 xl:py-[145px] bg-[#DB0A15] relative ">
             <div className="space-y-4 relative z-30">
-              <CommonTitle color="#582614">Pay-to-View</CommonTitle>
+              <CommonTitle color="#FFFFFF">Pay-to-View</CommonTitle>
 
-              <CommonSubTItle color="#582614">
+              <CommonSubTItle color="#FFFFFF">
                 Send as a group with friends or individually
               </CommonSubTItle>
             </div>
             {/* images */}
-            <div className="w-[790px] h-[465px] absolute -right-[520px] xl:-right-8 xl:-top-4 z-10  top-0 xl:scale-100 ">
+            <div className="w-[790px] h-[465px] absolute -right-[250px] xl:-right-8 xl:-top-4 z-10  -top-3 xl:scale-100 ">
               <img
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover scale-50 xl:scale-100"
                 src={figure5}
                 alt=""
               />
             </div>
           </div>
-          <div className="xl:col-span-4 single-content p-5 xl:p-10 bg-[#B8CEDC] relative ">
+          <div className="xl:col-span-4 single-content p-5 xl:p-10 bg-[#F94F64] relative ">
             <div className="space-y-4 mb-24 xl:mb-0">
-              <CommonTitle color="#184363">Advanced Insights</CommonTitle>
+              <CommonTitle color="#000000">Advanced Insights</CommonTitle>
 
-              <CommonSubTItle color="#184363">
+              <CommonSubTItle color="#000000">
                 Never miss a birthday or special occasion again
               </CommonSubTItle>
             </div>

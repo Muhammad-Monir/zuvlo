@@ -4,6 +4,8 @@
 
 @tailwind base;
 @tailwind components;
+
+
 @tailwind utilities;
 
 body {
@@ -15,7 +17,7 @@ body {
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url("./assets/images/hero-banner-bg.png") !important;
+  background-image: url("./assets/images/hero-banner-orange.png") !important;
 }
 
 .btn--shdaow {
