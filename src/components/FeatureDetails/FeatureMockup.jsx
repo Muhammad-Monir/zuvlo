@@ -32,10 +32,10 @@ const FeatureMockup = ({ elements }) => {
           start: "30% 40%",
           end: "50% 50%",
           toggleActions: "play complete reverse reverse",
-          markers: {
-            startColor: "lightBlue",
-            endColor: "lightBlue",
-          },
+          // markers: {
+          //   startColor: "lightBlue",
+          //   endColor: "lightBlue",
+          // },
         },
         top: "0%",
         duration: 1,
