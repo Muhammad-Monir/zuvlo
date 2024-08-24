@@ -29,7 +29,7 @@ const FeatureMockup = ({ elements }) => {
       tl.to(img2.current, {
         scrollTrigger: {
           trigger: elements[1].current,
-          start: "-15% 30%",
+          start: "10% 30%",
           end: "20% 40%",
           toggleActions: "play complete reverse reverse",
           // markers: {
@@ -43,13 +43,13 @@ const FeatureMockup = ({ elements }) => {
       }).to(img3.current, {
         scrollTrigger: {
           trigger: elements[2].current,
-          start: "-5% 30%",
-          end: "10% 40%",
+          start: "15% 30%",
+          end: "30% 40%",
           toggleActions: "play complete reverse reverse",
-          // markers: {
-          //   startColor: "blue",
-          //   endColor: "blue",
-          // },
+          markers: {
+            startColor: "blue",
+            endColor: "blue",
+          },
         },
         top: "0%",
         duration: 1,
