@@ -46,17 +46,17 @@ const Faq = () => {
   };
 
   return (
-    <section className="container pb-[80px] xl:pb-[250px] ">
-      <div className="text-center space-y-4 xl:space-y-5">
-        <h3 className=" text-[32px] leading-[48x] xl:text-[64px] text-[#101828] xl:leading-[84px] font-semibold ">
+    <section className="container pb-[80px] xlg:pb-[250px]">
+      <div className="space-y-4 text-center xl:space-y-5">
+        <h3 className="text-[32px] font-semibold leading-[48x] text-[#101828] xl:text-[44px] xl:leading-[56px] xlg:text-[64px] xlg:leading-[84px]">
           Frequently asked questions{" "}
         </h3>
-        <p className=" xl:text-[18px] leading-7 text-[#667085]   ">
+        <p className="leading-7 text-[#667085] xl:text-[18px]">
           Everything you need to know about the product and billing.
         </p>
       </div>
       {/* faq wrapper */}
-      <div className=" pt-14 xl:pt-[90px] flex flex-col gap-4 xl:gap-5">
+      <div className="flex flex-col gap-4 pt-14 xl:gap-5 xl:pt-[90px]">
         {faqList.map((item, index) => (
           <SingleFaq
             isOpen={openIndex === index}

@@ -11,16 +11,16 @@ const MarketingArea = () => {
     " text-base xl:text-[18px] leading-6 xl:leading-7 text-center";
 
   return (
-    <section className="container pb-14 xl:pb-[150px] ">
-      <h3 className=" text-[32px]  xl:text-[55px] font-semibold leading-[48px] text-center xl:leading-[67px] max-w-[1020px] mx-auto pb-14 xl:pb-[90px]  ">
+    <section className="container pb-14 xl:pb-[150px]">
+      <h3 className="mx-auto max-w-[1020px] pb-14 text-center text-[32px] font-semibold leading-[48px] xl:text-[44px] xl:leading-[56px] xlg:pb-[90px] xlg:text-[55px] xlg:leading-[67px]">
         {" "}
         Master Online Marketing with Ease and Independence, Completely Free{" "}
       </h3>
 
       {/* content wrapper */}
-      <div className="flex gap-5 flex-col xl:flex-row ">
-        <div className=" px-8 xl:px-[60px] pt-8 xl:pt-[64px] pb-[200px] xl:pb-[250px] rounded-3xl bg-[#E4F1FF] flex-1 relative overflow-hidden ">
-          <div className="max-w-[380px] mx-auto ">
+      <div className="flex flex-col gap-5 xl:flex-row">
+        <div className="relative flex-1 overflow-hidden rounded-3xl bg-[#E4F1FF] px-8 pb-[200px] pt-8 xl:px-[60px] xl:pb-[250px] xl:pt-[64px]">
+          <div className="mx-auto max-w-[380px]">
             <h4
               style={{
                 color: "#2A496B",
@@ -41,12 +41,12 @@ const MarketingArea = () => {
           </div>
 
           {/* images */}
-          <div className=" w-[350px] h-[220px]  xl:w-[720px] xl:h-[240px] absolute left-1/2 -translate-x-1/2 bottom-0  ">
-            <img src={feature1} alt="" className="w-full h-full object-cover" />
+          <div className="absolute bottom-0 left-1/2 h-[220px] w-[350px] -translate-x-1/2 xl:h-[240px] xl:w-[720px]">
+            <img src={feature1} alt="" className="h-full w-full object-cover" />
           </div>
         </div>
-        <div className="px-8 xl:px-[60px] pt-8 xl:pt-[64px] pb-[250px] rounded-3xl bg-[#E4E7FF] flex-1 relative overflow-hidden">
-          <div className="max-w-[380px] mx-auto mb-4">
+        <div className="relative flex-1 overflow-hidden rounded-3xl bg-[#E4E7FF] px-8 pb-[250px] pt-8 xl:px-[60px] xl:pt-[64px]">
+          <div className="mx-auto mb-4 max-w-[380px]">
             <h4
               style={{
                 color: "#2A3062",
@@ -66,7 +66,7 @@ const MarketingArea = () => {
             </p>
           </div>
 
-          <a href="#" className="flex w-fit mx-auto gap-4 items-center">
+          <a href="#" className="mx-auto flex w-fit items-center gap-4">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="16"
@@ -94,26 +94,26 @@ const MarketingArea = () => {
               </defs>
             </svg>
 
-            <span className="text-[20px] leading-8 font-medium text-[#2A3062] ">
+            <span className="text-[20px] font-medium leading-8 text-[#2A3062]">
               Learn more
             </span>
           </a>
 
           {/* images */}
-          <div className=" w-[350px] h-[220px]  xl:w-[720px] xl:h-[240px] absolute left-1/2 -translate-x-1/2 -bottom-5 overflow-hidden ">
-            <img src={feature2} alt="" className="w-full h-full object-cover" />
+          <div className="absolute -bottom-5 left-1/2 h-[220px] w-[350px] -translate-x-1/2 overflow-hidden xl:h-[240px] xl:w-[720px]">
+            <img src={feature2} alt="" className="h-full w-full object-cover" />
           </div>
         </div>
       </div>
 
       {/* sign up banner */}
-      <div className="mt-4 w-full py-6 xl:py-[75px] px-6 xl:px-[58px]  rounded-3xl bg-[#FAF1E3] relative overflow-hidden">
-        <div className="max-w-[782px] text-center mb-[250px] xl:mb-0">
-          <h3 className=" text-[32px] leading-[48px]  xl:text-[64px] xl:leading-[84px] font-semibold text-[#4F340A]  ">
+      <div className="relative mt-4 w-full overflow-hidden rounded-3xl bg-[#FAF1E3] px-6 py-6 xl:px-[58px] xl:py-[75px]">
+        <div className="mb-[250px] xl:max-w-[60%]  xlg:max-w-[782px] text-center xl:mb-0">
+          <h3 className="text-[32px] font-semibold leading-[48px] text-[#4F340A] xl:text-[44px] xl:leading-[56px] xlg:text-[64px] xlg:leading-[84px]">
             Sign up this month, <span className="text-pinkRed">earn more</span>{" "}
           </h3>
 
-          <p className=" text-[18px] leading-7 text-[#4F340A] max-w-[412px] mx-auto pb-5 xl:pb-[55px] ">
+          <p className="mx-auto max-w-[412px] pb-5 text-[18px] leading-7 text-[#4F340A] xl:pb-[55px]">
             {" "}
             Our Head of Content, Leni, guides you through your first successful
             funnel{" "}
@@ -123,11 +123,11 @@ const MarketingArea = () => {
         </div>
 
         {/* images */}
-        <div className=" w-[350px] h-[300px]  xl:w-[575px] xl:h-[405px] absolute left-1/2 -translate-x-1/2 xl:translate-x-0 xl:left-auto xl:right-8 -bottom-8 xl:bottom-0 ">
+        <div className="absolute -bottom-8 left-1/2 h-[300px] w-[350px] -translate-x-1/2 xl:left-auto xl:right-8 xl:h-[380px] xl:w-[450px] xl:translate-x-0 xlg:bottom-0 xlg:h-[405px] xlg:w-[575px]">
           <img
             src={banner}
             alt=""
-            className="w-full h-full object-contain xl:object-cover"
+            className="h-full w-full object-contain xlg:object-cover"
           />
         </div>
       </div>

@@ -49,20 +49,18 @@ const Creators = () => {
   ];
 
   return (
-    <section className=" py-[60px] xl:py-[150px]">
+    <section className="py-[60px] xlg:py-[150px]">
       <SectionTitle>Trusted by the{`world's`} biggest creators</SectionTitle>
 
       {/* creator slider area */}
-      <div className=" pt-[60px] xl:pt-[120px]">
-
-        <Marquee autoFill={true} >
-          <div className="flex gap-6 xl:gap-12 mr-6 xl:mr-12 xl:h-[612px] creator--holder ">
+      <div className="pt-[60px] xlg:pt-[120px]">
+        <Marquee autoFill={true}>
+          <div className="creator--holder mr-6 flex gap-6 md:h-[450px] xl:mr-8 xl:h-[612px] xl:gap-8 xlg:mr-12 xlg:gap-12">
             {creators.map((singleCreator, index) => (
               <CreatorSlide creator={singleCreator} key={index} />
             ))}
           </div>
         </Marquee>
-        
       </div>
     </section>
   );

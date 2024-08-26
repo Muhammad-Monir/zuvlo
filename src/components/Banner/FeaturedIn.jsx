@@ -14,7 +14,7 @@ const FeaturedIn = () => {
       </div>
 
       {/* wrapper */}
-      <div className="flex items-center justify-center gap-6 xl:gap-0 xl:justify-between pt-5 flex-wrap ">
+      <div className="flex items-center justify-center gap-6 xl:gap-0 xl:justify-between pt-5 flex-wrap relative z-50">
         {brandLogos.map((item, index) => (
           <img
             className=" w-[120px] h-[40px] xl:w-[140px]  xl:h-[55px] object-contain "

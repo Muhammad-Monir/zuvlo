@@ -12,23 +12,23 @@ const GridFeature = () => {
   return (
     <section className="container pt-[54px]">
       {/* title */}
-      <h3 className=" text-[32px] leading-[42px] xl:text-[64px] font-bold xl:leading-[84px] text-[#333] text-center ">
+      <h3 className="text-center text-[32px] font-bold leading-[42px] text-[#333] xl:text-[46px] xl:leading-[56px] xlg:text-[64px] xlg:leading-[84px]">
         Everything You Need to Succeed, All in One Place
       </h3>
 
       {/* grid area wrapper */}
-      <div className=" py-[60px] xl:py-[120px] grid-feature space-y-8 ">
+      <div className="grid-feature space-y-8 py-[60px] xlg:py-[120px]">
         {/* top grid */}
-        <div className="xl:grid xl:grid-cols-12 gap-4 xl:gap-8 flex flex-col ">
+        <div className="flex flex-col gap-4 xl:grid xl:grid-cols-12 xlg:gap-8">
           {/* first */}
-          <div className="single-content p-4 xl:p-9 bg-[#F9BDB5] xl:col-span-4   ">
+          <div className="single-content bg-[#F9BDB5] p-4 xl:col-span-4 xl:p-9">
             <CommonTitle color="#292929">AI Features</CommonTitle>
 
             {/* img wrapper */}
-            <div className=" my-2 xl:my-6">
-              <div className="xl:w-[420px] xl:h-[388px] w-[300px] h-[250px] ">
+            <div className="my-2 xl:my-6">
+              <div className="h-[250px] w-[300px] xl:h-[388px] xl:w-[420px]">
                 <img
-                  className="w-full h-full object-contain"
+                  className="h-full w-full object-contain"
                   src={figure1}
                   alt=""
                 />
@@ -43,9 +43,9 @@ const GridFeature = () => {
           </div>
 
           {/* second */}
-          <div className="xl:col-span-8 gap-4 xl:gap-8 flex flex-col">
+          <div className="flex flex-col gap-4 xl:col-span-8 xlg:gap-8">
             {/* top one */}
-            <div className="single-content  w-full px-8 xl:px-[46px] py-4 xl:py-1.5 bg-[#F94F64] flex flex-col xl:flex-row justify-between items-center gap-4 xl:gap-0 ">
+            <div className="single-content flex w-full flex-col items-center justify-between gap-4 bg-[#F94F64] px-8 py-4 xl:flex-row xl:gap-0 xl:px-[46px] xl:py-1.5">
               <div className="space-y-4">
                 <CommonTitle color=" #131313">24/7 Support</CommonTitle>
 
@@ -55,9 +55,9 @@ const GridFeature = () => {
                 </CommonSubTItle>
               </div>
 
-              <div className="xl:w-[375px] xl:h-[295px] w-[300px] h-[250px] ">
+              <div className="h-[250px] w-[300px] xl:h-[295px] xl:w-[375px]">
                 <img
-                  className="w-full h-full object-contain xl:object-cover"
+                  className="h-full w-full object-contain xl:object-cover"
                   src={figure2}
                   alt=""
                 />
@@ -65,14 +65,14 @@ const GridFeature = () => {
             </div>
 
             {/* lower one */}
-            <div className="flex gap-4 xl:gap-8 flex-col xl:flex-row ">
-              <div className="px-8 py-5 flex-1 bg-[#C00E01]  single-content ">
+            <div className="flex flex-col gap-4 xl:flex-row xlg:gap-8">
+              <div className="single-content flex-1 bg-[#C00E01] px-8 py-5">
                 {/* image */}
-                <div className="  w-[180px] h-[135px] xl:w-[220px] xl:h-[145px] mx-auto mb-6 ">
+                <div className="mx-auto mb-6 h-[135px] w-[180px] xl:h-[145px] xl:w-[220px]">
                   <img
                     src={figure3}
                     alt=""
-                    className="w-full h-full object-cover"
+                    className="h-full w-full object-cover"
                   />
                 </div>
 
@@ -84,11 +84,8 @@ const GridFeature = () => {
                   </CommonSubTItle>
                 </div>
               </div>
-              <div
-                className="px-8 pt-6 
-               flex-1 bg-[#FF2919] single-content relative "
-              >
-                <div className="space-y-4 mb-24 xl:mb-0">
+              <div className="single-content relative flex-1 bg-[#FF2919] px-8 pt-6">
+                <div className="mb-24 space-y-4 xl:mb-0">
                   <CommonTitle color="#FFF">Smart Messaging</CommonTitle>
 
                   <CommonSubTItle color="#FFF">
@@ -97,11 +94,11 @@ const GridFeature = () => {
                 </div>
 
                 {/* image */}
-                <div className="w-[370px] h-[395px] scale-[.7] xl:scale-100 absolute left-1/2 -translate-x-1/2 -bottom-[260px] xl:-bottom-[240px] rounded-3xl overflow-hidden ">
+                <div className="absolute -bottom-[260px] left-1/2 h-[395px] w-[370px] -translate-x-1/2 scale-[.7] overflow-hidden rounded-3xl xl:-bottom-[240px] xl:scale-100">
                   <img
                     src={figure4}
                     alt=""
-                    className="w-full h-full object-cover"
+                    className="h-full w-full object-cover"
                   />
                 </div>
               </div>
@@ -110,9 +107,9 @@ const GridFeature = () => {
         </div>
 
         {/* bottom grid */}
-        <div className="xl:grid xl:grid-cols-12 gap-4 xl:gap-8 flex flex-col">
-          <div className="xl:col-span-8 single-content pl-[46px] py-0 pt-5 pb-36 xl:py-[145px] bg-[#DB0A15] relative ">
-            <div className="space-y-4 relative z-30">
+        <div className="flex flex-col gap-4 xl:grid xl:grid-cols-12 xlg:gap-8">
+          <div className="single-content relative bg-[#DB0A15] py-0 pb-36 pl-[46px] pt-5 xl:col-span-8 xl:py-[145px]">
+            <div className="relative z-30 space-y-4">
               <CommonTitle color="#FFFFFF">Pay-to-View</CommonTitle>
 
               <CommonSubTItle color="#FFFFFF">
@@ -120,16 +117,16 @@ const GridFeature = () => {
               </CommonSubTItle>
             </div>
             {/* images */}
-            <div className="w-[790px] h-[465px] absolute -right-[250px] xl:-right-8 xl:-top-4 z-10  -top-3 xl:scale-100 ">
+            <div className="absolute -right-[250px] -top-3 z-10 h-[465px] w-[790px] xl:-right-8 xl:-top-4 xl:scale-100">
               <img
-                className="w-full h-full object-cover scale-50 xl:scale-100"
+                className="h-full w-full scale-50 object-cover xl:scale-100"
                 src={figure5}
                 alt=""
               />
             </div>
           </div>
-          <div className="xl:col-span-4 single-content p-5 xl:p-10 bg-[#F94F64] relative ">
-            <div className="space-y-4 mb-24 xl:mb-0">
+          <div className="single-content relative bg-[#F94F64] p-5 xl:col-span-4 xl:p-10">
+            <div className="mb-24 space-y-4 xl:mb-0">
               <CommonTitle color="#000000">Advanced Insights</CommonTitle>
 
               <CommonSubTItle color="#000000">
@@ -138,11 +135,11 @@ const GridFeature = () => {
             </div>
 
             {/* images */}
-            <div className="xl:w-[375px] xl:h-[375px] w-[285px] h-[250px] absolute -right-5 xl:right-0 -bottom-[140px] xl:-bottom-[150px] ">
+            <div className="absolute -bottom-[140px] -right-5 h-[250px] w-[285px] xl:-bottom-[150px] xl:right-0 xl:h-[375px] xl:w-[375px]">
               <img
                 src={figure6}
                 alt=""
-                className="w-full h-full object-contain xl:object-cover"
+                className="h-full w-full object-contain xl:object-cover"
               />
             </div>
           </div>

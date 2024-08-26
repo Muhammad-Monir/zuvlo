@@ -66,19 +66,19 @@ const HeroBanner = () => {
   return (
     <section
       id="hero--banner"
-      className="container pt-12  xl:pt-[160px] pb-16 xl:pb-[100px]  relative flex flex-col items-center  xl:block "
+      className="container relative flex flex-col items-center pb-16 pt-12 xl:block xl:pb-[100px] xl:pt-12 xlg:pt-[160px]"
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
     >
       {/* text area starts */}
-      <div className="xl:max-w-[70%] pb-0 xl:pb-[300px]">
-        <h3 className=" text-[32px] xl:text-[80px] font-bold text-black leading-[48px] xl:leading-[100px] ">
+      <div className="pb-0 xl:max-w-[60%] xl:pb-[250px] xlg:max-w-[70%] xlg:pb-[300px]">
+        <h3 className="text-[32px] font-bold leading-[48px] text-black xl:text-[56px] xl:leading-[76px] xlg:text-[80px] xlg:leading-[100px]">
           Join Forces, Innovate Freely, and Reap the Rewards
         </h3>
 
         {/* text content */}
-        <div className="  xl:max-w-[450px] pt-4 xl:pt-16 space-y-6 xl:space-y-9">
-          <p className=" text-base  xl:text-[20px] leading-7 xl:leading-8 text-[#4c4b49]  ">
+        <div className="space-y-6 pt-4 xl:max-w-[450px] xl:space-y-9 xl:pt-16">
+          <p className="text-base leading-7 text-[#4c4b49] xl:text-[20px] xl:leading-8">
             The creator subscription platform for the future. Sign up before the
             end of the month &{" "}
             <span className="text-textBlack">take home 85% for 3 months!</span>
@@ -93,22 +93,22 @@ const HeroBanner = () => {
       </div>
 
       {/* mockup and graphics */}
-      <div className="absolute right-0 bottom-32 w-[200px] h-[800px] hidden xl:block">
+      <div className="absolute bottom-14 right-0 hidden h-[800px] xl:block xl:w-[124px] xlg:bottom-32 xlg:w-[200px]">
         {/* first graphics */}
         <img
-          className="w-full h-full object-contain"
+          className="h-full w-full object-contain"
           src={lineThrough}
           alt=""
         />
 
         {/* content creators graphics */}
-        <div className="absolute -left-[100px] top-[50%]  -translate-y-[50%]  min-w-fit">
-          <p className="text-[20px] font-semibold leading-6 text-[#475467] text-nowrap">
+        <div className="absolute -left-[100px] top-[50%] min-w-fit -translate-y-[50%]">
+          <p className="font-semibold leading-6 text-[#475467] xl:text-[16px] xlg:text-nowrap xlg:text-[20px]">
             Trusted by 60,000+ Creators
           </p>
 
           <img
-            className="w-[180px] h-10 object-contain"
+            className="h-10 w-[180px] object-contain"
             src={charAvatar}
             alt=""
           />
@@ -118,25 +118,25 @@ const HeroBanner = () => {
       {/* mobile mockup group */}
       <div
         id="hero--banner--mockup"
-        className=" relative -mt-[50px] mb-[600px] xl:mt-0 xl:mb-0 xl:absolute top-0 right-auto z-50 w-fit left-[18%] -translate-x-[18%]   xl:top-[160px]  xl:right-[300px] xl:left-auto xl:translate-x-0  "
+        className="relative left-[18%] right-auto top-0 z-50 -mt-[50px] mb-[600px] w-fit -translate-x-[18%] xl:absolute xl:left-auto xl:right-[300px] xl:top-[160px] xl:mb-0 xl:mt-0 xl:translate-x-0"
       >
         {/* first image */}
         <img
-          className=" min-w-[300px] max-w-[300px]  xl:min-w-[485px] object-contain xl:object-fill xl:max-w-[485px] h-[660px] mockup mockup-one absolute -top-6 -right-12 xl:right-5 z-30 "
+          className="mockup mockup-one absolute -right-12 -top-6 z-30 h-[660px] min-w-[300px] max-w-[300px] object-contain xl:-right-20 xl:-top-20 xl:h-[600px] xl:min-w-[450px] xl:max-w-[450px] xl:object-fill xlg:-top-6 xlg:right-5 xlg:h-[660px] xlg:min-w-[485px] xlg:max-w-[485px]"
           src={mockup1}
           alt=""
         />
         {/* second image */}
         <img
-          className=" min-w-[250px] max-w-[250px] object-contain xl:object-fill xl:min-w-[350px] xl:max-w-[350px] h-[350px]  mockup mockup-two absolute top-20 -left-[120px]  xl:top-14 xl:-right-14 z-20 xl:left-auto  "
+          className="mockup mockup-two absolute -left-[120px] top-20 z-20 h-[350px] min-w-[250px] max-w-[250px] object-contain xl:-left-[180px] xl:top-8 xl:min-w-[300px] xl:max-w-[300px] xl:object-fill xlg:-right-14 xlg:left-auto xlg:top-20 xlg:min-w-[350px] xlg:max-w-[350px]"
           src={mockup2}
           alt=""
         />
       </div>
 
       {/* flower shadow */}
-      <div className="absolute z-10 bottom-28 left-1/2 -translate-x-1/2 w-[440px] h-[440px] hidden xl:block">
-        <img className="w-full h-full object-contain" src={flower} alt="" />
+      <div className="absolute bottom-28 left-1/2 z-10 hidden h-[440px] -translate-x-1/2 xl:block xl:w-[380px] xlg:w-[440px]">
+        <img className="h-full w-full object-contain" src={flower} alt="" />
       </div>
 
       {/* featured In Area */}

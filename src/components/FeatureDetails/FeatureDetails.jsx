@@ -49,9 +49,9 @@ const FeatureDetails = () => {
       className=" xl:pt-32 xl:pb-12 xl:mb-20 relative feature-details-container "
     >
       {/* main content */}
-      <div className="container flex gap-[225px] relative z-20 xl:px-[72px] ">
+      <div className="container flex sm:gap-3 md:gap-20 xl:gap-[225px] relative z-20 xl:px-[72px]  ">
         {/* description holder */}
-        <div className="max-w-[732px]">
+        <div className="sm:max-w-[50%]  xl:max-w-[732px]">
           {/* list */}
           <div className="flex flex-col">
             <div ref={elem1} className={featureHolder}>
@@ -103,7 +103,7 @@ const FeatureDetails = () => {
         </div>
 
         {/* animation holder */}
-        <div className="hidden xl:block">
+        <div className="hidden sm:block">
           <FeatureMockup
             elements={elements}
             sectionContainer={sectionContainer}

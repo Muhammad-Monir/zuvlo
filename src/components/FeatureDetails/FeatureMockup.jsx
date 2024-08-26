@@ -56,32 +56,32 @@ const FeatureMockup = ({ elements }) => {
         ease: "Power1.easeInOut",
       });
     },
-    { scope: container }
+    { scope: container },
   );
 
   return (
-    <div ref={container} className="sticky top-5 pt-28 ">
+    <div ref={container} className="sticky top-5 sm:pt-8 xl:pt-20 xlg:pt-28">
       {/* image holder */}
       <div
         ref={imgHolder}
-        className="w-[320px] h-[680px] rounded-[30px] overflow-hidden ft-animation-holder relative "
+        className="ft-animation-holder relative overflow-hidden rounded-[30px] sm:h-[480px] sm:w-[220px] xl:h-[580px] xl:w-[280px] xlg:h-[680px] xlg:w-[320px]"
       >
         <img
           ref={img1}
           src={mockup1}
-          className="w-full h-full object-cover active"
+          className="active h-full w-full object-cover"
           alt=""
         />
         <img
           ref={img2}
           src={mockup2}
-          className="w-full h-full object-cover"
+          className="h-full w-full object-cover"
           alt=""
         />
         <img
           ref={img3}
           src={mockup3}
-          className="w-full h-full object-cover"
+          className="h-full w-full object-cover"
           alt=""
         />
       </div>
