@@ -1,16 +1,16 @@
 import PropTypes from "prop-types";
 
-const SignUpBtn = ({ size = "sm", version = "sign-up" }) => {
+const SignUpBtn = ({ size = "sm", version = "sign-up", url = "#" }) => {
   return (
     <a
-      className={` font-medium rounded-[160px] text-base leading-5 ${
-        size === "mx" ? "px-7 py-3 text-[18px]" : " px-8 py-4"
+      className={`rounded-[160px] text-base font-medium leading-5 ${
+        size === "mx" ? "px-7 py-3 text-[18px]" : "px-8 py-4"
       } ${
         version === "login"
           ? "bg-[rgba(255,41,25,0.20)] text-textBlack"
-          : "text-white bg-[linear-gradient(270deg,#BE0D00_0%,#FF2919_100%)]"
+          : "bg-[linear-gradient(270deg,#BE0D00_0%,#FF2919_100%)] text-white"
       } `}
-      href="#"
+      href={url}
     >
       {" "}
       {version === "login" ? "Login" : "Sign Up"}
@@ -21,6 +21,7 @@ const SignUpBtn = ({ size = "sm", version = "sign-up" }) => {
 SignUpBtn.propTypes = {
   size: PropTypes.string,
   version: PropTypes.string,
+  url: "string",
 };
 
 export default SignUpBtn;
