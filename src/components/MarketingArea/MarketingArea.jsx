@@ -18,7 +18,7 @@ const MarketingArea = () => {
       </h3>
 
       {/* content wrapper */}
-      <div className="flex flex-col gap-5 xl:flex-row">
+      <div className="flex flex-col gap-5 md:flex-row">
         <div className="relative flex-1 overflow-hidden rounded-3xl bg-[#E4F1FF] px-8 pb-[200px] pt-8 xl:px-[60px] xl:pb-[250px] xl:pt-[64px]">
           <div className="mx-auto max-w-[380px]">
             <h4
@@ -108,7 +108,7 @@ const MarketingArea = () => {
 
       {/* sign up banner */}
       <div className="relative mt-4 w-full overflow-hidden rounded-3xl bg-[#FAF1E3] px-6 py-6 xl:px-[58px] xl:py-[75px]">
-        <div className="mb-[250px] xl:max-w-[60%]  xlg:max-w-[782px] text-center xl:mb-0">
+        <div className="mb-[250px] text-center xl:mb-0 xl:max-w-[60%] xlg:max-w-[782px]">
           <h3 className="text-[32px] font-semibold leading-[48px] text-[#4F340A] xl:text-[44px] xl:leading-[56px] xlg:text-[64px] xlg:leading-[84px]">
             Sign up this month, <span className="text-pinkRed">earn more</span>{" "}
           </h3>

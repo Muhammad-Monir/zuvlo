@@ -17,11 +17,11 @@ const GridFeature = () => {
       </h3>
 
       {/* grid area wrapper */}
-      <div className="grid-feature space-y-8 py-[60px] xlg:py-[120px]">
+      <div className="grid-feature mx-auto space-y-8 py-[60px] sm:w-[80%] md:w-[60%] lg:w-full lg:space-y-5 xl:space-y-8 xlg:py-[120px]">
         {/* top grid */}
-        <div className="flex flex-col gap-4 xl:grid xl:grid-cols-12 xlg:gap-8">
+        <div className="flex flex-col gap-4 lg:grid lg:grid-cols-12 lg:gap-5 xl:gap-8">
           {/* first */}
-          <div className="single-content bg-[#F9BDB5] p-4 xl:col-span-4 xl:p-9">
+          <div className="single-content bg-[#F9BDB5] p-4 sm:flex sm:flex-col sm:items-center lg:col-span-4 lg:block xl:p-9">
             <CommonTitle color="#292929">AI Features</CommonTitle>
 
             {/* img wrapper */}
@@ -43,9 +43,9 @@ const GridFeature = () => {
           </div>
 
           {/* second */}
-          <div className="flex flex-col gap-4 xl:col-span-8 xlg:gap-8">
+          <div className="flex flex-col gap-4 lg:col-span-8 xlg:gap-8">
             {/* top one */}
-            <div className="single-content flex w-full flex-col items-center justify-between gap-4 bg-[#F94F64] px-8 py-4 xl:flex-row xl:gap-0 xl:px-[46px] xl:py-1.5">
+            <div className="single-content flex w-full flex-col items-center justify-between gap-4 bg-[#F94F64] px-8 py-4 lg:flex-row xl:gap-0 xl:px-[46px] xl:py-1.5">
               <div className="space-y-4">
                 <CommonTitle color=" #131313">24/7 Support</CommonTitle>
 
@@ -65,7 +65,7 @@ const GridFeature = () => {
             </div>
 
             {/* lower one */}
-            <div className="flex flex-col gap-4 xl:flex-row xlg:gap-8">
+            <div className="flex flex-col gap-4 lg:flex-row xlg:gap-8">
               <div className="single-content flex-1 bg-[#C00E01] px-8 py-5">
                 {/* image */}
                 <div className="mx-auto mb-6 h-[135px] w-[180px] xl:h-[145px] xl:w-[220px]">
@@ -107,8 +107,8 @@ const GridFeature = () => {
         </div>
 
         {/* bottom grid */}
-        <div className="flex flex-col gap-4 xl:grid xl:grid-cols-12 xlg:gap-8">
-          <div className="single-content relative bg-[#DB0A15] py-0 pb-36 pl-[46px] pt-5 xl:col-span-8 xl:py-[145px]">
+        <div className="flex flex-col gap-4 lg:grid lg:grid-cols-12 xlg:gap-8">
+          <div className="single-content relative bg-[#DB0A15] py-0 pb-36 pl-[46px] pt-5 lg:col-span-7 xl:col-span-8 xl:py-[145px]">
             <div className="relative z-30 space-y-4">
               <CommonTitle color="#FFFFFF">Pay-to-View</CommonTitle>
 
@@ -125,7 +125,7 @@ const GridFeature = () => {
               />
             </div>
           </div>
-          <div className="single-content relative bg-[#F94F64] p-5 xl:col-span-4 xl:p-10">
+          <div className="single-content relative bg-[#F94F64] p-5 lg:col-span-5 xl:col-span-4 xl:p-10">
             <div className="mb-24 space-y-4 xl:mb-0">
               <CommonTitle color="#000000">Advanced Insights</CommonTitle>
 

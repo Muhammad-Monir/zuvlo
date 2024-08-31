@@ -37,7 +37,7 @@ const FeatureDetails = () => {
 
   const elements = [elem1, elem2, elem3];
 
-  const featureHolder = ` py-[40px] xl:py-[160px] `;
+  const featureHolder = ` py-[40px] lg:py-[80px] xl:py-[160px] `;
   const featureIntro = `py-1.5 px-3 xl:px-5 mb-4 rounded-[160px] backdrop-blur-[20px] bg-[rgba(22,22,19,0.04)] w-fit text-[14px] xl:text-base`;
   const featureTitle = ` text-[30px] leading-[42px] xl:text-5xl font-semibold xl:leading-[64px] text-textBlack`;
   const featureDesc = ` py-4 xl:py-8 text-base xl:text-[18px] leading-7 text-[rgba(22,22,19,0.75)] max-w-[535px]`;
