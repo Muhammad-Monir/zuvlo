@@ -18,7 +18,7 @@ const MarketingArea = () => {
       </h3>
 
       {/* content wrapper */}
-      <div className="flex flex-col gap-5 md:flex-row">
+      <div className="flex flex-col gap-5 sm:flex-row">
         <div className="relative flex-1 overflow-hidden rounded-3xl bg-[#E4F1FF] px-8 pb-[200px] pt-8 xl:px-[60px] xl:pb-[250px] xl:pt-[64px]">
           <div className="mx-auto max-w-[380px]">
             <h4
@@ -41,7 +41,7 @@ const MarketingArea = () => {
           </div>
 
           {/* images */}
-          <div className="absolute bottom-0 left-1/2 h-[220px] w-[350px] -translate-x-1/2 xl:h-[240px] xl:w-[720px]">
+          <div className="absolute bottom-0 left-1/2 h-[220px] w-[100%] -translate-x-1/2 xl:h-[240px] xl:w-[720px]">
             <img src={feature1} alt="" className="h-full w-full object-cover" />
           </div>
         </div>
@@ -100,7 +100,7 @@ const MarketingArea = () => {
           </a>
 
           {/* images */}
-          <div className="absolute -bottom-5 left-1/2 h-[220px] w-[350px] -translate-x-1/2 overflow-hidden xl:h-[240px] xl:w-[720px]">
+          <div className="absolute -bottom-5 left-1/2 h-[220px] w-[100%] -translate-x-1/2 overflow-hidden xl:h-[240px] xl:w-[720px]">
             <img src={feature2} alt="" className="h-full w-full object-cover" />
           </div>
         </div>
